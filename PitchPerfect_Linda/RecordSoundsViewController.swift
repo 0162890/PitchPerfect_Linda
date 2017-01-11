@@ -1,5 +1,5 @@
 //
-//  ViewController.swift
+//  RecordSoundsViewController.swift
 //  PitchPerfect_Linda
 //
 //  Created by 하연 on 2017. 1. 10..
@@ -8,7 +8,7 @@
 
 import UIKit
 
-class ViewController: UIViewController {
+class RecordSoundsViewController: UIViewController {
 
     @IBOutlet weak var btnRecording: UIButton!
     @IBOutlet weak var btnStopRecording: UIButton!
@@ -35,6 +35,8 @@ class ViewController: UIViewController {
         btnRecording.isEnabled = true
         btnStopRecording.isEnabled = false
         lblRecording.text = "Recording is stopped"
+        performSegue(withIdentifier: "RecordToPlaySegue", sender: sender)
+
     }
 }
 
