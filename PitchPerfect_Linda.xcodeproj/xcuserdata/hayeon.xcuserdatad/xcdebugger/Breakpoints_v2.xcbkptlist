@@ -66,5 +66,224 @@
             </Locations>
          </BreakpointContent>
       </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            shouldBeEnabled = "No"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "PitchPerfect_Linda/RecordSoundsViewController.swift"
+            timestampString = "505827861.629319"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "12"
+            endingLineNumber = "12"
+            landmarkName = "RecordSoundsViewController"
+            landmarkType = "3">
+            <Locations>
+               <Location
+                  shouldBeEnabled = "No"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "PitchPerfect_Linda.RecordSoundsViewController.init (nibName : Swift.Optional&lt;Swift.String&gt;, bundle : Swift.Optional&lt;__ObjC.Bundle&gt;) -&gt; PitchPerfect_Linda.RecordSoundsViewController"
+                  moduleName = "PitchPerfect_Linda"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/hayeon/Documents/Xcode/PitchPerfect_Linda/PitchPerfect_Linda/RecordSoundsViewController.swift"
+                  timestampString = "505828233.545784"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "14"
+                  endingLineNumber = "14"
+                  offsetFromSymbolStart = "70">
+               </Location>
+               <Location
+                  shouldBeEnabled = "No"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "PitchPerfect_Linda.RecordSoundsViewController.__allocating_init (nibName : Swift.Optional&lt;Swift.String&gt;, bundle : Swift.Optional&lt;__ObjC.Bundle&gt;) -&gt; PitchPerfect_Linda.RecordSoundsViewController"
+                  moduleName = "PitchPerfect_Linda"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/hayeon/Documents/Xcode/PitchPerfect_Linda/PitchPerfect_Linda/RecordSoundsViewController.swift"
+                  timestampString = "505828233.548296"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "0"
+                  endingLineNumber = "0"
+                  offsetFromSymbolStart = "23">
+               </Location>
+               <Location
+                  shouldBeEnabled = "No"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "PitchPerfect_Linda.RecordSoundsViewController.__allocating_init (coder : __ObjC.NSCoder) -&gt; Swift.Optional&lt;PitchPerfect_Linda.RecordSoundsViewController&gt;"
+                  moduleName = "PitchPerfect_Linda"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/hayeon/Documents/Xcode/PitchPerfect_Linda/PitchPerfect_Linda/RecordSoundsViewController.swift"
+                  timestampString = "505828233.551266"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "0"
+                  endingLineNumber = "0"
+                  offsetFromSymbolStart = "4">
+               </Location>
+               <Location
+                  shouldBeEnabled = "No"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "PitchPerfect_Linda.RecordSoundsViewController.init (coder : __ObjC.NSCoder) -&gt; Swift.Optional&lt;PitchPerfect_Linda.RecordSoundsViewController&gt;"
+                  moduleName = "PitchPerfect_Linda"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/hayeon/Documents/Xcode/PitchPerfect_Linda/PitchPerfect_Linda/RecordSoundsViewController.swift"
+                  timestampString = "505828233.553484"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "14"
+                  endingLineNumber = "14"
+                  offsetFromSymbolStart = "31">
+               </Location>
+            </Locations>
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            shouldBeEnabled = "No"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "PitchPerfect_Linda/RecordSoundsViewController.swift"
+            timestampString = "505827862.585973"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "15"
+            endingLineNumber = "15"
+            landmarkName = "RecordSoundsViewController"
+            landmarkType = "3">
+            <Locations>
+               <Location
+                  shouldBeEnabled = "No"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "PitchPerfect_Linda.RecordSoundsViewController.btnStopRecording.getter : weak Swift.ImplicitlyUnwrappedOptional&lt;__ObjC.UIButton&gt;"
+                  moduleName = "PitchPerfect_Linda"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/hayeon/Documents/Xcode/PitchPerfect_Linda/PitchPerfect_Linda/RecordSoundsViewController.swift"
+                  timestampString = "505828233.561058"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "15"
+                  endingLineNumber = "15"
+                  offsetFromSymbolStart = "27">
+               </Location>
+               <Location
+                  shouldBeEnabled = "No"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "PitchPerfect_Linda.RecordSoundsViewController.init (nibName : Swift.Optional&lt;Swift.String&gt;, bundle : Swift.Optional&lt;__ObjC.Bundle&gt;) -&gt; PitchPerfect_Linda.RecordSoundsViewController"
+                  moduleName = "PitchPerfect_Linda"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/hayeon/Documents/Xcode/PitchPerfect_Linda/PitchPerfect_Linda/RecordSoundsViewController.swift"
+                  timestampString = "505828233.564595"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "15"
+                  endingLineNumber = "15"
+                  offsetFromSymbolStart = "159">
+               </Location>
+               <Location
+                  shouldBeEnabled = "No"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "PitchPerfect_Linda.RecordSoundsViewController.init (coder : __ObjC.NSCoder) -&gt; Swift.Optional&lt;PitchPerfect_Linda.RecordSoundsViewController&gt;"
+                  moduleName = "PitchPerfect_Linda"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/hayeon/Documents/Xcode/PitchPerfect_Linda/PitchPerfect_Linda/RecordSoundsViewController.swift"
+                  timestampString = "505828233.566422"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "15"
+                  endingLineNumber = "15"
+                  offsetFromSymbolStart = "88">
+               </Location>
+            </Locations>
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            shouldBeEnabled = "No"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "PitchPerfect_Linda/RecordSoundsViewController.swift"
+            timestampString = "505828264.88062"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "14"
+            endingLineNumber = "14"
+            landmarkName = "RecordSoundsViewController"
+            landmarkType = "3">
+            <Locations>
+               <Location
+                  shouldBeEnabled = "No"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "PitchPerfect_Linda.RecordSoundsViewController.btnRecording.getter : weak Swift.ImplicitlyUnwrappedOptional&lt;__ObjC.UIButton&gt;"
+                  moduleName = "PitchPerfect_Linda"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/hayeon/Documents/Xcode/PitchPerfect_Linda/PitchPerfect_Linda/RecordSoundsViewController.swift"
+                  timestampString = "505828264.884863"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "14"
+                  endingLineNumber = "14"
+                  offsetFromSymbolStart = "27">
+               </Location>
+               <Location
+                  shouldBeEnabled = "No"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "PitchPerfect_Linda.RecordSoundsViewController.btnRecording.setter : weak Swift.ImplicitlyUnwrappedOptional&lt;__ObjC.UIButton&gt;"
+                  moduleName = "PitchPerfect_Linda"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/hayeon/Documents/Xcode/PitchPerfect_Linda/PitchPerfect_Linda/RecordSoundsViewController.swift"
+                  timestampString = "505828264.88712"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "14"
+                  endingLineNumber = "14"
+                  offsetFromSymbolStart = "42">
+               </Location>
+               <Location
+                  shouldBeEnabled = "No"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "PitchPerfect_Linda.RecordSoundsViewController.init (nibName : Swift.Optional&lt;Swift.String&gt;, bundle : Swift.Optional&lt;__ObjC.Bundle&gt;) -&gt; PitchPerfect_Linda.RecordSoundsViewController"
+                  moduleName = "PitchPerfect_Linda"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/hayeon/Documents/Xcode/PitchPerfect_Linda/PitchPerfect_Linda/RecordSoundsViewController.swift"
+                  timestampString = "505828264.888962"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "14"
+                  endingLineNumber = "14"
+                  offsetFromSymbolStart = "70">
+               </Location>
+               <Location
+                  shouldBeEnabled = "No"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "PitchPerfect_Linda.RecordSoundsViewController.init (coder : __ObjC.NSCoder) -&gt; Swift.Optional&lt;PitchPerfect_Linda.RecordSoundsViewController&gt;"
+                  moduleName = "PitchPerfect_Linda"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/hayeon/Documents/Xcode/PitchPerfect_Linda/PitchPerfect_Linda/RecordSoundsViewController.swift"
+                  timestampString = "505828264.890739"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "14"
+                  endingLineNumber = "14"
+                  offsetFromSymbolStart = "31">
+               </Location>
+            </Locations>
+         </BreakpointContent>
+      </BreakpointProxy>
    </Breakpoints>
 </Bucket>
