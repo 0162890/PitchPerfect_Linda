@@ -121,6 +121,9 @@ extension PlaySoundsViewController: AVAudioPlayerDelegate {
         
         if let stopTimer = stopTimer {
             stopTimer.invalidate()
+            //for progress view
+            self.progressTimer.invalidate()
+            self.progressView.progress = 0.0
         }
         
         configureUI(.notPlaying)

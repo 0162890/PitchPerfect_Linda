@@ -57,7 +57,7 @@ class PlaySoundsViewController: UIViewController {
         configureUI(.playing)
 
         //for progress view : Run updateProgressViewTime function with time interval.
-        progressTimer = Timer.scheduledTimer(timeInterval: 1, target: self, selector: #selector(PlaySoundsViewController.updateProgressViewTime), userInfo: nil, repeats: true)
+        progressTimer = Timer.scheduledTimer(timeInterval: 0.05, target: self, selector: #selector(PlaySoundsViewController.updateProgressViewTime), userInfo: nil, repeats: true)
         progressTimer.fire()
         
     }
@@ -65,7 +65,9 @@ class PlaySoundsViewController: UIViewController {
     @IBAction func stopPlaySound(_ sender: AnyObject) {
         stopAudio()
         //for progress view : stop timer
-        //progressTimer.invalidate()
+        progressTimer.invalidate()
+        progressView.progress = 0.0
+
     }
     
     //for progress view : update progress view count
@@ -94,8 +96,10 @@ class PlaySoundsViewController: UIViewController {
         totalTime = Float(Float(audioFile.length) / Float(audioFile.fileFormat.sampleRate))
         print("totalTime : \(totalTime)")
         progressView.progress = progressCount
-//        let transform : CGAffineTransform = CGAffineTransform(scaleX: 0.7, y: 1.0)
-//        progressView.transform = transform
+        
+        //change the progress view width
+        let transform : CGAffineTransform = CGAffineTransform(scaleX: 0.6, y: 1.0)
+        progressView.transform = transform
     }
     
     override func viewWillAppear(_ animated: Bool) {
