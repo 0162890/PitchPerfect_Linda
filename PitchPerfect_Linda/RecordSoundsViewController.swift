@@ -19,14 +19,13 @@ class RecordSoundsViewController: UIViewController, AVAudioRecorderDelegate {
     
     override func viewDidLoad() {
         super.viewDidLoad()
-//        btnStopRecording.isHidden = true
-//        lblRecording.isHidden = true
+        
     }
     
     override func viewWillAppear(_ animated: Bool) {
         super.viewWillAppear(animated)
         btnStopRecording.isHidden = true
-        lblRecording.isHidden = true
+        lblRecording.text = "Tap to Record"
     }
 
     @IBAction func recordAudio(_ sender: Any) {
@@ -49,6 +48,7 @@ class RecordSoundsViewController: UIViewController, AVAudioRecorderDelegate {
         audioRecorder.isMeteringEnabled = true
         audioRecorder.prepareToRecord()
         audioRecorder.record()
+        
 
     }
     @IBAction func stopRecording(_ sender: Any) {

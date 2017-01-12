@@ -29,8 +29,8 @@
                                     <action selector="recordAudio:" destination="BYZ-38-t0r" eventType="touchUpInside" id="nzD-V6-CrD"/>
                                 </connections>
                             </button>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Recording" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="VYy-af-dVa" userLabel="Recording Label">
-                                <rect key="frame" x="148" y="398.5" width="78" height="21"/>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Tap to Record" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="VYy-af-dVa" userLabel="Recording Label">
+                                <rect key="frame" x="133.5" y="398.5" width="107" height="21"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
@@ -137,11 +137,14 @@
                                             </button>
                                         </subviews>
                                     </stackView>
-                                    <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" distribution="fillEqually" translatesAutoresizingMaskIntoConstraints="NO" id="AYB-KA-F39">
+                                    <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" translatesAutoresizingMaskIntoConstraints="NO" id="AYB-KA-F39">
                                         <rect key="frame" x="0.0" y="452.5" width="343" height="150.5"/>
                                         <subviews>
+                                            <progressView opaque="NO" contentMode="scaleToFill" verticalHuggingPriority="750" progress="0.5" translatesAutoresizingMaskIntoConstraints="NO" id="ujY-YJ-qdE">
+                                                <rect key="frame" x="0.0" y="0.0" width="343" height="2"/>
+                                            </progressView>
                                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="4HC-xs-QSL">
-                                                <rect key="frame" x="0.0" y="0.0" width="343" height="150.5"/>
+                                                <rect key="frame" x="0.0" y="2" width="343" height="148.5"/>
                                                 <state key="normal" image="Stop"/>
                                                 <connections>
                                                     <action selector="stopPlaySound:" destination="Ua9-uT-pz2" eventType="touchUpInside" id="47O-lM-I6t"/>
@@ -154,10 +157,10 @@
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                         <constraints>
-                            <constraint firstAttribute="trailingMargin" secondItem="lFI-f6-x6a" secondAttribute="trailing" id="3ds-c2-T2u"/>
-                            <constraint firstItem="lFI-f6-x6a" firstAttribute="leading" secondItem="hd5-Tj-GXf" secondAttribute="leadingMargin" id="M11-9j-ZVF"/>
-                            <constraint firstItem="lFI-f6-x6a" firstAttribute="top" secondItem="AEc-CX-st8" secondAttribute="bottom" id="VU8-Px-vbA"/>
-                            <constraint firstItem="gvO-8R-dHl" firstAttribute="top" secondItem="lFI-f6-x6a" secondAttribute="bottom" id="paW-1E-PFL"/>
+                            <constraint firstItem="lFI-f6-x6a" firstAttribute="bottom" secondItem="gvO-8R-dHl" secondAttribute="top" id="B3J-bO-2MC"/>
+                            <constraint firstItem="lFI-f6-x6a" firstAttribute="trailing" secondItem="hd5-Tj-GXf" secondAttribute="trailingMargin" id="SS4-B7-g3O"/>
+                            <constraint firstItem="lFI-f6-x6a" firstAttribute="top" secondItem="AEc-CX-st8" secondAttribute="bottom" id="o6d-9d-bHJ"/>
+                            <constraint firstItem="lFI-f6-x6a" firstAttribute="leading" secondItem="hd5-Tj-GXf" secondAttribute="leadingMargin" id="sfM-ak-kr3"/>
                         </constraints>
                     </view>
                     <connections>
@@ -165,6 +168,7 @@
                         <outlet property="fastButton" destination="j0a-1s-TeQ" id="l9i-eO-XP3"/>
                         <outlet property="highPitchButton" destination="Lw7-4R-mYd" id="Sqd-Pa-tjM"/>
                         <outlet property="lowPitchButton" destination="KmG-0a-uNk" id="vBb-wG-Hrb"/>
+                        <outlet property="progressView" destination="ujY-YJ-qdE" id="HQJ-2e-DCv"/>
                         <outlet property="reverbButton" destination="0Dl-m1-Hdn" id="KOv-fF-SfZ"/>
                         <outlet property="slowButton" destination="ozt-9q-MV3" id="pHB-mO-WNC"/>
                         <outlet property="stopButton" destination="4HC-xs-QSL" id="Pqk-oW-VaG"/>
