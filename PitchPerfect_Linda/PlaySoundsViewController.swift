@@ -19,6 +19,7 @@ class PlaySoundsViewController: UIViewController {
     @IBOutlet weak var echoButton: UIButton!
     @IBOutlet weak var reverbButton: UIButton!
     @IBOutlet weak var stopButton: UIButton!
+    
     @IBOutlet weak var progressView: UIProgressView!
     @IBOutlet weak var pauseButton: UIButton!
     
@@ -35,7 +36,7 @@ class PlaySoundsViewController: UIViewController {
     var currentTime : Float = 0.0
     var progressTimer : Timer!
     
-    var pauseBtnFlag : Bool = false
+    var nowPlaying : Bool = true
     
     enum ButtonType: Int {
         case slow = 0, fast, highPitch, lowPitch, echo, reverb
@@ -58,90 +59,68 @@ class PlaySoundsViewController: UIViewController {
         }
         
         configureUI(.playing)
+        
         startProgressViewTimer()
-        
         setPauseButton(imageName: "Pause")
-    
-        
     }
 
+    //Pause and Resume Action
     @IBAction func pauseAndResume(_ sender: Any) {
-        if pauseBtnFlag == false{
+        if nowPlaying {
             audioPlayerNode.pause()
-            //pause timer
-            progressTimer.invalidate()
-//            if let stopTimer = stopTimer {
-//                stopTimer.invalidate()
-//            }
-            
             setPauseButton(imageName: "Resume")
             
-
-
-            
+            //pause progressTimer
+            progressTimer.invalidate()
+        
         } else{
-          
-            //timer resume
-            startProgressViewTimer()
-   //         startStopTimer()
-            
             audioPlayerNode.play()
-            print("resumeeeeeeeee")
-            
             setPauseButton(imageName: "Pause")
             
-
+            //resume progressTimer
+            startProgressViewTimer()
         }
-        
+    }
 
+    @IBAction func stopPlaySound(_ sender: AnyObject) {
+        stopAudio()
+        setPauseButton(imageName: "Pause")
+        
+        //for progress view : stop progress view
+        progressTimer.invalidate()
+        progressView.progress = 0.0
     }
     
+    //Change nowPlaying flag and button image
     func setPauseButton(imageName : String){
         if imageName == "Pause"{
             let image = UIImage(named: imageName) as UIImage!
             pauseButton.setImage(image, for: UIControlState.normal)
-            pauseBtnFlag = false
+            nowPlaying = true
         } else if imageName == "Resume" {
             let image = UIImage(named: imageName) as UIImage!
             pauseButton.setImage(image, for: UIControlState.normal)
-            pauseBtnFlag = true
+            nowPlaying = false
         }
     }
-  
     
-    @IBAction func stopPlaySound(_ sender: AnyObject) {
-        stopAudio()
-        //for progress view : stop timer
-        progressTimer.invalidate()
-        progressView.progress = 0.0
-        setPauseButton(imageName: "Pause")
-
-
-    }
-    
-    //for progress view : 
+    //for progress view : Run updateProgressViewTime function with time interval.
     func startProgressViewTimer(){
-        //for progress view : Run updateProgressViewTime function with time interval.
         progressTimer = Timer.scheduledTimer(timeInterval: 0.05, target: self, selector: #selector(PlaySoundsViewController.updateProgressViewTime), userInfo: nil, repeats: true)
         progressTimer.fire()
     }
     
-    //for progress view : update progress view count
+    //for progress view : update progressCount
     func updateProgressViewTime(){
         calCurrentTime()
-        print("currentTime : \(currentTime)")
-        print("totalTime : \(totalTime)")
         progressCount = currentTime / totalTime
-        print("ProgressCount : \(progressCount)")
         progressView.progress = progressCount
-
     }
   
     //for progress view : calculate currentTime
     func calCurrentTime(){
         if let lastRenderTime = audioPlayerNode.lastRenderTime, let playerTime = audioPlayerNode.playerTime(forNodeTime: lastRenderTime){
                 currentTime = Float(Double(playerTime.sampleTime) / playerTime.sampleRate)
-                //print("currentTime in function:  \(currentTime)")
         }
     }
     
@@ -150,7 +129,6 @@ class PlaySoundsViewController: UIViewController {
         setupAudio()
         //for progress view 
         totalTime = Float(Float(audioFile.length) / Float(audioFile.fileFormat.sampleRate))
-//        print("totalTime : \(totalTime)")
         progressView.progress = progressCount
         
         //change the progress view width
@@ -161,7 +139,6 @@ class PlaySoundsViewController: UIViewController {
     override func viewWillAppear(_ animated: Bool) {
         super.viewWillAppear(animated)
         configureUI(.notPlaying)
-    
     }
 
 

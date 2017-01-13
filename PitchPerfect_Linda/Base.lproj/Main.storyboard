@@ -43,7 +43,7 @@
                                 </connections>
                             </button>
                         </subviews>
-                        <color key="backgroundColor" red="0.0" green="0.47843137250000001" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                         <constraints>
                             <constraint firstItem="fkb-SS-cTp" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="FTg-ZJ-nTo"/>
                             <constraint firstItem="ieQ-Av-fjY" firstAttribute="centerX" secondItem="VYy-af-dVa" secondAttribute="centerX" id="LWp-Jy-PYe"/>
@@ -108,6 +108,7 @@
                                                         </connections>
                                                     </button>
                                                 </subviews>
+                                                <variation key="heightClass=compact" axis="horizontal"/>
                                             </stackView>
                                             <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" distribution="fillEqually" translatesAutoresizingMaskIntoConstraints="NO" id="7tG-cS-Ete" userLabel="Right Effect Stack View">
                                                 <rect key="frame" x="171.5" y="0.0" width="171.5" height="514"/>
@@ -134,8 +135,10 @@
                                                         </connections>
                                                     </button>
                                                 </subviews>
+                                                <variation key="heightClass=compact" axis="horizontal"/>
                                             </stackView>
                                         </subviews>
+                                        <variation key="heightClass=compact" axis="vertical"/>
                                     </stackView>
                                     <progressView opaque="NO" contentMode="scaleToFill" verticalHuggingPriority="750" progress="0.5" translatesAutoresizingMaskIntoConstraints="NO" id="ujY-YJ-qdE">
                                         <rect key="frame" x="0.0" y="514" width="343" height="3.5"/>

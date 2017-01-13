@@ -132,7 +132,8 @@ extension PlaySoundsViewController: AVAudioPlayerDelegate {
         if let stopTimer = stopTimer {
             print(stopTimer.fireDate)
             stopTimer.invalidate()
-            //for progress view
+            
+            //for progress view : stop progress view
             self.progressTimer.invalidate()
             self.progressView.progress = 0.0
         }
