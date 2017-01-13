@@ -17,7 +17,7 @@
 - Change button array in landscape screen
 
 ## Video
-[PitchPerfect_Linda](https://youtu.be/dtLraCNBR7E)
+[![PitchPerfect_Linda](https://img.youtube.com/vi/dtLraCNBR7E/0.jpg)](https://youtu.be/dtLraCNBR7E)
 ## Screenshots
 
 ## Info
