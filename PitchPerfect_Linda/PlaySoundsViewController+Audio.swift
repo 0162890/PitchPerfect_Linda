@@ -12,6 +12,7 @@ import AVFoundation
 
 extension PlaySoundsViewController: AVAudioPlayerDelegate {
     
+    
     // MARK: Alerts
     
     struct Alerts {
@@ -26,6 +27,7 @@ extension PlaySoundsViewController: AVAudioPlayerDelegate {
         static let AudioFileError = "Audio File Error"
         static let AudioEngineError = "Audio Engine Error"
     }
+    
     
     // MARK: PlayingState (raw values correspond to sender tags)
     
@@ -87,7 +89,7 @@ extension PlaySoundsViewController: AVAudioPlayerDelegate {
         audioPlayerNode.stop()
         audioPlayerNode.scheduleFile(audioFile, at: nil) {
             
-            var delayInSeconds: Double = 0
+            var delayInSeconds : Double = 0
             
             if let lastRenderTime = self.audioPlayerNode.lastRenderTime, let playerTime = self.audioPlayerNode.playerTime(forNodeTime: lastRenderTime) {
                 if let rate = rate {
@@ -97,10 +99,13 @@ extension PlaySoundsViewController: AVAudioPlayerDelegate {
                 }
             }
             
+            
             // schedule a stop timer for when audio finishes playing
             self.stopTimer = Timer(timeInterval: delayInSeconds, target: self, selector: #selector(PlaySoundsViewController.stopAudio), userInfo: nil, repeats: false)
             RunLoop.main.add(self.stopTimer!, forMode: RunLoopMode.defaultRunLoopMode)
         }
+        
+        
         
         do {
             try audioEngine.start()
@@ -113,13 +118,19 @@ extension PlaySoundsViewController: AVAudioPlayerDelegate {
         audioPlayerNode.play()
     }
     
+    func startStopTimer(){
+
+    }
+    
     func stopAudio() {
         
         if let audioPlayerNode = audioPlayerNode {
             audioPlayerNode.stop()
+            
         }
         
         if let stopTimer = stopTimer {
+            print(stopTimer.fireDate)
             stopTimer.invalidate()
             //for progress view
             self.progressTimer.invalidate()
@@ -149,9 +160,11 @@ extension PlaySoundsViewController: AVAudioPlayerDelegate {
         case .playing:
             setPlayButtonsEnabled(false)
             stopButton.isEnabled = true
+            pauseButton.isEnabled = true
         case .notPlaying:
             setPlayButtonsEnabled(true)
             stopButton.isEnabled = false
+            pauseButton.isEnabled = false
         }
     }
     
