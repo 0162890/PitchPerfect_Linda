@@ -8,7 +8,7 @@
 - Fast sound
 - High-pitched sound
 - Low-pitched sound
-- Echo sound 
+- Echo sound
 - Reverb sound
 
 ## Additional Features
@@ -17,10 +17,10 @@
 - Change button array in landscape screen
 
 ## Video
-
+[PitchPerfect_Linda](https://youtu.be/dtLraCNBR7E)
 ## Screenshots
 
 ## Info
 - Author : Hayeon Kim(Linda)
 - BoostCamp 1st assignment
-- Udacity 'Intro to iOS App Development with Swift - Pitch Pefect'
+- Udacity 'Intro to iOS App Development with Swift - Pitch Perfect'
