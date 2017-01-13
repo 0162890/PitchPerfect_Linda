@@ -18,7 +18,13 @@
 
 ## Video
 [![PitchPerfect_Linda](https://img.youtube.com/vi/dtLraCNBR7E/0.jpg)](https://youtu.be/dtLraCNBR7E)
+
 ## Screenshots
+- Portrait Screen
+![Portrait](https://github.com/BoostCamp/PitchPerfect_Linda/blob/master/Screenshots/portrait.png?raw=true)
+
+- Landscape Screen
+![LandScape](https://github.com/BoostCamp/PitchPerfect_Linda/blob/master/Screenshots/Landscape.png?raw=true)
 
 ## Info
 - Author : Hayeon Kim(Linda)
